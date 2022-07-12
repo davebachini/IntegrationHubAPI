@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Work Leaves" max_length="40" name="x_832172_integra_work_leaves" type="collection">
+        <element label="Leave Date" mandatory="true" max_length="40" name="leave_date" type="glide_date"/>
+        <element label="Leave Type" mandatory="true" max_length="32" name="leave_type" reference="x_832172_integra_leave_types" type="reference"/>
+        <element label="Slack User ID" max_length="100" name="slack_user_id" read_only="true" type="string"/>
+        <element choice="1" default="new" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="For Approval" value="for approval"/>
+                <element inactive_on_update="false" label="New" value="new"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+            </choice>
+        </element>
+    </element>
+</database>

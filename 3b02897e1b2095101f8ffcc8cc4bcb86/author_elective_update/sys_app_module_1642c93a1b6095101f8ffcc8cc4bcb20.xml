@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Leaves">5e42c93a1b6095101f8ffcc8cc4bcb1c</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Leaves</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_832172_integra_leaves</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_832172_integra.leaves_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:18:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1642c93a1b6095101f8ffcc8cc4bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leaves</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_app_module_1642c93a1b6095101f8ffcc8cc4bcb20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:18:31</sys_updated_on>
+        <timeline_page/>
+        <title>Leaves</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_app_module_1642c93a1b6095101f8ffcc8cc4bcb20</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Leaves">5e42c93a1b6095101f8ffcc8cc4bcb1c</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Leaves</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_832172_integra_leaves</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_832172_integra.leaves_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-11 06:18:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1642c93a1b6095101f8ffcc8cc4bcb20</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Leaves</sys_name><sys_overrides/><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_update_name>sys_app_module_1642c93a1b6095101f8ffcc8cc4bcb20</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-11 06:18:31</sys_updated_on><timeline_page/><title>Leaves</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1002423403</payload_hash>
+        <record_name>Leaves</record_name>
+        <reverted_from/>
+        <source>fb02897e1b2095101f8ffcc8cc4bcb88</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:18:31</sys_created_on>
+        <sys_id>2642c93a1b6095101f8ffcc8cc4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181ebe8cd1a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:18:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>6e42c93a7e609510151e409135334122</update_guid>
+        <update_guid_history>6e42c93a7e609510151e409135334122:1002423403</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Leaves">eed8060b1be011101f8ffcc8cc4bcbfc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 06:05:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2aeb54711df148af8bb376429184a771</sys_id>
+        <sys_metadata>1642c93a1b6095101f8ffcc8cc4bcb20</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leaves</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_app_module_1642c93a1b6095101f8ffcc8cc4bcb20</sys_update_name>
+        <sys_update_version display_value="sys_app_module_1642c93a1b6095101f8ffcc8cc4bcb20">2642c93a1b6095101f8ffcc8cc4bcb23</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 06:05:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

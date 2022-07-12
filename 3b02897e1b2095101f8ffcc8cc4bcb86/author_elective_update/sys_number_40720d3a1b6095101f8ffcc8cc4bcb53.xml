@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_832172_integra_leaves">x_832172_integra_leaves</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>LEA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:19:11</sys_created_on>
+        <sys_id>40720d3a1b6095101f8ffcc8cc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LEA</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_number_40720d3a1b6095101f8ffcc8cc4bcb53</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:19:11</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_number_40720d3a1b6095101f8ffcc8cc4bcb53</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_832172_integra_leaves">x_832172_integra_leaves</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>LEA</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-11 06:19:11</sys_created_on><sys_id>40720d3a1b6095101f8ffcc8cc4bcb53</sys_id><sys_mod_count>0</sys_mod_count><sys_name>LEA</sys_name><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_update_name>sys_number_40720d3a1b6095101f8ffcc8cc4bcb53</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-11 06:19:11</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-10856624</payload_hash>
+        <record_name>LEA</record_name>
+        <reverted_from/>
+        <source>fb02897e1b2095101f8ffcc8cc4bcb88</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:19:11</sys_created_on>
+        <sys_id>44720d3a1b6095101f8ffcc8cc4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181ebe968ac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:19:11</sys_updated_on>
+        <type>Number</type>
+        <update_guid>8c720d3a70609510f84d3edd26225059</update_guid>
+        <update_guid_history>8c720d3a70609510f84d3edd26225059:-10856624</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 06:05:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>8f8da9e9ef9f4f7c99a0e3c01f4b2790</sys_id>
+        <sys_metadata>40720d3a1b6095101f8ffcc8cc4bcb53</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LEA</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent display_value="">3622493a1b6095101f8ffcc8cc4bcb3e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_number_40720d3a1b6095101f8ffcc8cc4bcb53</sys_update_name>
+        <sys_update_version display_value="sys_number_40720d3a1b6095101f8ffcc8cc4bcb53">44720d3a1b6095101f8ffcc8cc4bcb5a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 06:05:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

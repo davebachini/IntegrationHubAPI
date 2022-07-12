@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml,application/x-www-form-urlencoded</consumes>
+        <consumes_customized>true</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>applyLeave</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+	var command = request.queryParams.command;
+	var userId = request.queryParams.user_id;
+	var text = request.queryParams.text.toString();
+	var textArray = text.split(",");
+	var responseText = "";
+	
+	if ((textArray.length < 3) || (textArray.length >= 4)){
+		responseText = "Invalid command. Please refer to the about page of this app.";
+	} else {
+		var leaveCount = textArray[0];
+		var dates = textArray[1];
+		var typeOfLeave = textArray[2];
+		
+		if (checkLeaveCountIfValid(leaveCount) && 
+			checkTypeOfLeaveIfValid(typeOfLeave) && 
+			checkIfDateIsValid(leaveCount, dates)) {
+			var sysId = "";
+			responseText = "チョットマッテクダサイ";
+			var checkLeaves = new GlideRecord("x_832172_integra_leave_types");
+			checkLeaves.addQuery("type", typeOfLeave.toUpperCase());
+			checkLeaves.query();
+			
+			while (checkLeaves.next()) {
+				sysId = checkLeaves.getValue("sys_id");
+			}
+			
+			if (leaveCount.toLowerCase() === "single") {
+				var leaves = new GlideRecord("x_832172_integra_work_leaves");
+				leaves.initialize();
+				leaves.leave_type = sysId;
+				leaves.leave_date = dates;
+				leaves.slack_user_id = userId.toString();
+				leaves.insert();
+			} else {
+				var datesArray = dates.toString().split('.');
+				var checkExistingLeaves = new GlideRecord("x_832172_integra_work_leaves");
+				checkExistingLeaves.addQuery("leave_date", "IN", datesArray);
+				checkExistingLeaves.addQuery("slack_user_id", userId.toString());
+				checkExistingLeaves.query();
+				
+				if (checkExistingLeaves.getRowCount() > 0) {
+					responseText = "Some of the dates entered already exist in our database.";
+				} else {
+					for (var i = 0;i < datesArray.length; i++) {
+						var newLeave = new GlideRecord("x_832172_integra_work_leaves");
+						newLeave.initialize();
+						newLeave.leave_type = sysId;
+						newLeave.leave_date = datesArray[i];
+						newLeave.slack_user_id = userId.toString();
+						newLeave.insert();
+					}
+				}
+			}
+		} else {
+			responseText = "Invalid command. Please refer to the about page of this app.";
+		}
+	}
+	
+	var writer = response.getStreamWriter();
+	var hdrs = {};
+	
+	hdrs['Content-Type'] = 'application/json';
+	response.setStatus(200);
+    response.setHeaders(hdrs);
+	
+	writer.writeString("{\"response_type\":\"ephemeral\",\"text\":\""+responseText+"\"}");
+})(request, response);
+
+function checkLeaveCountIfValid (leaveCount) {
+	var leaveCounts = ["single","multiple"];
+	
+	if (leaveCounts.indexOf(leaveCount.toLowerCase()) !== -1) {
+		return true;
+	}
+	
+	return false;
+}
+
+function checkTypeOfLeaveIfValid (typeOfLeave) {
+	var types = ["vl","sl", "el"];
+	
+	if (types.indexOf(typeOfLeave.toLowerCase()) !== -1) {
+		return true;
+	}
+	
+	return false;
+}
+
+function checkIfDateIsValid (leaveCount, date) {
+	var dateRegex = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
+	
+	if (leaveCount.toLowerCase() === "single") {
+		if (dateRegex.test(date)) {
+			return true;
+		} else {
+			return false;
+		}
+	} else if (leaveCount.toLowerCase() === "multiple") {
+		var checkInvalid = 0;
+		var datesArray = date.toString().split('.');
+	
+		for (var i = 0;i < datesArray.length; i++) {
+			if (!dateRegex.test(datesArray[i])) {
+				++checkInvalid;
+			}
+		}
+		
+		if (checkInvalid > 0) {
+			return false;
+		} else {
+			return true;
+		}
+	} else {
+		// Invalid leaveCount
+		return false;
+	}
+}]]></operation_script>
+        <operation_uri>/api/x_832172_integra/leaves/apply</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/apply</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:32:01</sys_created_on>
+        <sys_id>b474cdba1b6095101f8ffcc8cc4bcb60</sys_id>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_name>applyLeave</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_ws_operation_b474cdba1b6095101f8ffcc8cc4bcb60</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 06:31:29</sys_updated_on>
+        <web_service_definition display_value="Leaves">51440dba1b6095101f8ffcc8cc4bcb5e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

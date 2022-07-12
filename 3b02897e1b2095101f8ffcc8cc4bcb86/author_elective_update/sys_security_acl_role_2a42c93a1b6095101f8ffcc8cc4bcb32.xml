@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:18:31</sys_created_on>
+        <sys_id>2a42c93a1b6095101f8ffcc8cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_832172_integra_leaves.x_832172_integra.leaves_user</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_security_acl display_value="x_832172_integra_leaves">6242c93a1b6095101f8ffcc8cc4bcb30</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2a42c93a1b6095101f8ffcc8cc4bcb32</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:18:31</sys_updated_on>
+        <sys_user_role display_value="x_832172_integra.leaves_user" name="x_832172_integra.leaves_user">5a428d361b6095101f8ffcc8cc4bcb65</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_security_acl_role_2a42c93a1b6095101f8ffcc8cc4bcb32</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-11 06:18:31</sys_created_on><sys_id>2a42c93a1b6095101f8ffcc8cc4bcb32</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_832172_integra_leaves.x_832172_integra.leaves_user</sys_name><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_security_acl display_value="x_832172_integra_leaves">6242c93a1b6095101f8ffcc8cc4bcb30</sys_security_acl><sys_update_name>sys_security_acl_role_2a42c93a1b6095101f8ffcc8cc4bcb32</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-11 06:18:31</sys_updated_on><sys_user_role display_value="x_832172_integra.leaves_user" name="x_832172_integra.leaves_user">5a428d361b6095101f8ffcc8cc4bcb65</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>18378200</payload_hash>
+        <record_name>x_832172_integra_leaves.x_832172_integra.leaves_user</record_name>
+        <reverted_from/>
+        <source>fb02897e1b2095101f8ffcc8cc4bcb88</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-11 06:18:32</sys_created_on>
+        <sys_id>aa42c93a1b6095101f8ffcc8cc4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181ebe8cee20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 06:18:32</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>e242c93a36609510e1a57d4d3a0ef534</update_guid>
+        <update_guid_history>e242c93a36609510e1a57d4d3a0ef534:18378200</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_832172_integra_leaves.x_832172_integra.leaves_user">6ad8060b1be011101f8ffcc8cc4bcbdb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 06:05:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1e71130719d54c30bb90a4ac38bd5631</sys_id>
+        <sys_metadata>2a42c93a1b6095101f8ffcc8cc4bcb32</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_832172_integra_leaves.x_832172_integra.leaves_user</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent display_value="">6242c93a1b6095101f8ffcc8cc4bcb30</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_2a42c93a1b6095101f8ffcc8cc4bcb32</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_2a42c93a1b6095101f8ffcc8cc4bcb32">aa42c93a1b6095101f8ffcc8cc4bcb34</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 06:05:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
