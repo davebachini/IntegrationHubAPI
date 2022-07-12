@@ -36,12 +36,21 @@
 			}
 			
 			if (leaveCount.toLowerCase() === "single") {
-				var leaves = new GlideRecord("x_832172_integra_work_leaves");
-				leaves.initialize();
-				leaves.leave_type = sysId;
-				leaves.leave_date = dates;
-				leaves.slack_user_id = userId.toString();
-				leaves.insert();
+				var checkExistingLeave = new GlideRecord("x_832172_integra_work_leaves");
+				checkExistingLeave.addQuery("leave_date", dates);
+				checkExistingLeave.addQuery("slack_user_id", userId.toString());
+				checkExistingLeave.query();
+				
+				if (checkExistingLeave.getRowCount() > 0) {
+					responseText = "Entered date already exists in our database.";
+				} else {
+					var leaves = new GlideRecord("x_832172_integra_work_leaves");
+					leaves.initialize();
+					leaves.leave_type = sysId;
+					leaves.leave_date = dates;
+					leaves.slack_user_id = userId.toString();
+					leaves.insert();	
+				}
 			} else {
 				var datesArray = dates.toString().split('.');
 				var checkExistingLeaves = new GlideRecord("x_832172_integra_work_leaves");
@@ -139,14 +148,14 @@ function checkIfDateIsValid (leaveCount, date) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-11 06:32:01</sys_created_on>
         <sys_id>b474cdba1b6095101f8ffcc8cc4bcb60</sys_id>
-        <sys_mod_count>88</sys_mod_count>
+        <sys_mod_count>89</sys_mod_count>
         <sys_name>applyLeave</sys_name>
         <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
         <sys_policy/>
         <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
         <sys_update_name>sys_ws_operation_b474cdba1b6095101f8ffcc8cc4bcb60</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-12 06:31:29</sys_updated_on>
+        <sys_updated_on>2022-07-12 08:09:19</sys_updated_on>
         <web_service_definition display_value="Leaves">51440dba1b6095101f8ffcc8cc4bcb5e</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
