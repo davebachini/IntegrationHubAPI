@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml,application/x-www-form-urlencoded</consumes>
+        <consumes_customized>true</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>slackTest</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var command = request.queryParams.command;
+	var userId = request.queryParams.user_id;
+	var text = request.queryParams.text.toString();
+	var channelId = request.queryParams.channel_id;
+	var timestamp = request.getHeader('X-Slack-Request-Timestamp');
+	var header = request.getHeader('X-Slack-Signature');
+	var parameters = request.queryParams;
+	var buildParams = [];
+	
+// 	var reqHeaders = request.headers;
+// 	for (var head in reqHeaders) {
+// 		var headerValue = encodeURIComponent(reqHeaders[head]);
+// 		headerValue = headerValue.replace(/%20/g, "+")
+//                      .replace(/!/g, '%21')
+//                      .replace(/'/g, '%27')
+//                      .replace(/\(/g, '%28')
+//                      .replace(/\)/g, '%29')
+//                      .replace(/\*/g, '%2A');
+// 		buildParams.push(head + "=" + headerValue);
+// 	}
+	
+	for (var property in parameters) {
+		var value = encodeURIComponent(parameters[property]);
+		value = value.replace(/%20/g, "+")
+                         .replace(/!/g, '%21')
+                         .replace(/'/g, '%27')
+                         .replace(/\(/g, '%28')
+                         .replace(/\)/g, '%29')
+                         .replace(/\*/g, '%2A');
+		
+		buildParams.push(property + "=" + value);
+	}
+	
+
+	var finalParams = buildParams.join('&');
+	var toBeHashed = "v0:" + timestamp + ":" + finalParams;
+	gs.info(finalParams);
+	gs.info(toBeHashed);
+	var key = "22ce9d81507d8b88478f081b8d9c1f19";
+	var encrypted = CryptoJS.HmacSHA256(toBeHashed, key);
+	gs.info("Encrypted: " + encrypted);
+	gs.info("Header: " + header);
+	
+	//var baseString = 'v0:'+timestamp+':'+rawPostBody;
+	//gs.info(rawPostBody);
+	//var key = "22ce9d81507d8b88478f081b8d9c1f19";
+
+	//var h = CryptoJS.HmacSHA256(baseString, key);
+	//
+	//gs.info("Encrypted: " + h);
+	//gs.info("Header: " + header);
+	
+// 	response.setBody({
+// 		"timestamp": timestamp,
+// 		"command": command,
+// 		"userId": userId,
+// 		"text": text,
+// 		"channelId": channelId
+// 	});
+	response.setStatus(200);
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_832172_integra/leaves/slack</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/slack</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-15 10:09:44</sys_created_on>
+        <sys_id>1c6d9ec01bbcd1101f8ffcc8cc4bcbe4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>slackTest</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_ws_operation_1c6d9ec01bbcd1101f8ffcc8cc4bcbe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 10:11:25</sys_updated_on>
+        <web_service_definition display_value="Leaves">51440dba1b6095101f8ffcc8cc4bcb5e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

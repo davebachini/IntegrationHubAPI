@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml,application/x-www-form-urlencoded</consumes>
+        <consumes_customized>true</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>slackMiddleware</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var command = request.queryParams.command;
+	var userId = request.queryParams.user_id;
+	var text = request.queryParams.text.toString();
+	var channelId = request.queryParams.channel_id.toString();
+	var token = request.queryParams.token.toString();
+	var RESOURCE_PATH = "/api/x_832172_integra/leaves/apply";
+	var responseText = "";
+	
+	// Check if token is included in the query parameter
+	if (token !== undefined || token.length !== 0) {
+		if (token === gs.getProperty("x_832172_integra.slackVerificationToken")) {
+			if (checkCorrectChannel(channelId)) {
+				var restMessage = new sn_ws.RESTMessageV2();
+				restMessage.setEndpoint('https://dev80684.service-now.com/' + RESOURCE_PATH );
+				restMessage.setHttpMethod('POST');
+
+				// Set Authentication
+				var user = 'integration.user';
+				var password = gs.getProperty("x_832172_integra.integrationUserPassword");
+				restMessage.setBasicAuth(user,password);
+				
+				var payload = {
+					"data": {
+						"command": request.queryParams.command,
+						"userId": request.queryParams.user_id,
+						"text": request.queryParams.text.toString()
+					}
+				};
+    
+				restMessage.setRequestBody(JSON.stringify(payload));
+
+				restMessage.setRequestHeader("Accept","application/json");
+				var restResponse = restMessage.execute();
+				var jsonResponse = JSON.parse(restResponse.getBody());
+				
+				responseText = jsonResponse.text;
+			} else {
+				responseText = "You can't use the entered command on this channel.";
+			}
+		} else {
+			responseText = "You're trying to access an invalid endpoint.";
+		}
+	} else {
+		responseText = "You're trying to access an invalid endpoint.";
+	}
+	
+	var writer = response.getStreamWriter();
+	var hdrs = {};
+	
+	hdrs['Content-Type'] = 'application/json';
+	response.setStatus(200);
+    response.setHeaders(hdrs);
+	
+	writer.writeString("{\"response_type\":\"ephemeral\",\"text\":\""+responseText+"\"}");
+})(request, response);
+
+function checkCorrectChannel (channelId) {
+	var channelIdProperty = gs.getProperty("x_832172_integra.channelId");
+	
+	if (channelIdProperty === channelId) {
+		return true;
+	}
+	
+	return false;
+}
+]]></operation_script>
+        <operation_uri>/api/x_832172_integra/leaves/processRequest</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/processRequest</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 06:56:56</sys_created_on>
+        <sys_id>f8c6643b1b6891101f8ffcc8cc4bcba5</sys_id>
+        <sys_mod_count>78</sys_mod_count>
+        <sys_name>slackMiddleware</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_ws_operation_f8c6643b1b6891101f8ffcc8cc4bcba5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-15 10:39:40</sys_updated_on>
+        <web_service_definition display_value="Leaves">51440dba1b6095101f8ffcc8cc4bcb5e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

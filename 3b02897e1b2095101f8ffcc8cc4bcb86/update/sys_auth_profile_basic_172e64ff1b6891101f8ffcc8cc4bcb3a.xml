@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>REST Credentials</name>
+        <password>﷞﷟﷒72874d291b3701101f8ffcc8cc4bcbc6﷬﷔1﷬﷭eKW9K1mPjyZiWiQ0xY8MLg==tVLLrTgM_uI_prtbpBC1geWKjiM=﷮﷯</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-14 07:25:24</sys_created_on>
+        <sys_id>172e64ff1b6891101f8ffcc8cc4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>REST Credentials</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_172e64ff1b6891101f8ffcc8cc4bcb3a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-14 07:25:24</sys_updated_on>
+        <username>root</username>
+    </sys_auth_profile_basic>
+</record_update>
