@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Click UI action 'Delete' on 'Work Leaves' form</description>
+        <display_name>Click a UI Action</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>9</order>
+        <step_config display_value="Click a UI Action">0f4a128297202200abe4bb7503ac4af0</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:54:17</sys_created_on>
+        <sys_id>9e35220a1bbd91101f8ffcc8cc4bcbf1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Click a UI Action</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_step_9e35220a1bbd91101f8ffcc8cc4bcbf1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 09:12:28</sys_updated_on>
+        <table>x_832172_integra_work_leaves</table>
+        <test display_value="Successful Application with Approval">dadf16821bbd91101f8ffcc8cc4bcb90</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=9e35220a1bbd91101f8ffcc8cc4bcbf1"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:54:17</sys_created_on>
+        <sys_id>0955a20a1bbd91101f8ffcc8cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 08:54:17</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="Form UI">535cb5ab53233300f06fddeeff7b1247</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:54:17</sys_created_on>
+        <sys_id>4155a20a1bbd91101f8ffcc8cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 08:54:17</sys_updated_on>
+        <value/>
+        <variable display_value="Assert type">7600f16353e0220002c6435723dc34d5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:54:17</sys_created_on>
+        <sys_id>4555a20a1bbd91101f8ffcc8cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 08:54:17</sys_updated_on>
+        <value>1f12506f7f532200348ef0d8adfa9139</value>
+        <variable display_value="UI action">7c5f6d2353e0220002c6435723dc34f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:54:17</sys_created_on>
+        <sys_id>c955a20a1bbd91101f8ffcc8cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 08:54:17</sys_updated_on>
+        <value>x_832172_integra_work_leaves</value>
+        <variable display_value="Table">3eee292353e0220002c6435723dc343c</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_atf_step_9e35220a1bbd91101f8ffcc8cc4bcbf1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Click UI action 'Delete' on 'Work Leaves' form</description><display_name>Click a UI Action</display_name><inputs/><mugshots_cache_json/><notes/><order>9</order><step_config display_value="Click a UI Action">0f4a128297202200abe4bb7503ac4af0</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:54:17</sys_created_on><sys_id>9e35220a1bbd91101f8ffcc8cc4bcbf1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Click a UI Action</sys_name><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_update_name>sys_atf_step_9e35220a1bbd91101f8ffcc8cc4bcbf1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 09:12:28</sys_updated_on><table>x_832172_integra_work_leaves</table><test display_value="Successful Application with Approval">dadf16821bbd91101f8ffcc8cc4bcb90</test><timeout>1970-01-01 00:00:05</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=9e35220a1bbd91101f8ffcc8cc4bcbf1"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:54:17</sys_created_on><sys_id>0955a20a1bbd91101f8ffcc8cc4bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 08:54:17</sys_updated_on><value>standard_ui</value><variable display_value="Form UI">535cb5ab53233300f06fddeeff7b1247</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key><order>500</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:54:17</sys_created_on><sys_id>4155a20a1bbd91101f8ffcc8cc4bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 08:54:17</sys_updated_on><value/><variable display_value="Assert type">7600f16353e0220002c6435723dc34d5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:54:17</sys_created_on><sys_id>4555a20a1bbd91101f8ffcc8cc4bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 08:54:17</sys_updated_on><value>1f12506f7f532200348ef0d8adfa9139</value><variable display_value="UI action">7c5f6d2353e0220002c6435723dc34f6</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>9e35220a1bbd91101f8ffcc8cc4bcbf1</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:54:17</sys_created_on><sys_id>c955a20a1bbd91101f8ffcc8cc4bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 08:54:17</sys_updated_on><value>x_832172_integra_work_leaves</value><variable display_value="Table">3eee292353e0220002c6435723dc343c</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-11207548</payload_hash>
+        <record_name>Click a UI Action</record_name>
+        <reverted_from/>
+        <source>7d225a031b2411101f8ffcc8cc4bcb4d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 09:12:28</sys_created_on>
+        <sys_id>ef796a4e1bbd91101f8ffcc8cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18321859ea00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 09:12:28</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>a7796a4ec7bd9110d2790c765649a39c</update_guid>
+        <update_guid_history>a7796a4ec7bd9110d2790c765649a39c:-11207548,4d55a20a98bd9110115595eb0aa5d4fd:1130761580</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 09:12:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>33e215157afc497e944786c6078d8484</sys_id>
+        <sys_metadata>9e35220a1bbd91101f8ffcc8cc4bcbf1</sys_metadata>
+        <sys_name>Click a UI Action</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_atf_step_9e35220a1bbd91101f8ffcc8cc4bcbf1</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_9e35220a1bbd91101f8ffcc8cc4bcbf1">ef796a4e1bbd91101f8ffcc8cc4bcb9c</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

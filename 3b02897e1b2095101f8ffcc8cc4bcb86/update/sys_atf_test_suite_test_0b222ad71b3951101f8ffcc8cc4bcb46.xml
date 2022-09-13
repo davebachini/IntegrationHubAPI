@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="INSERT_OR_UPDATE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>7</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 05:53:00</sys_created_on>
+        <sys_id>0b222ad71b3951101f8ffcc8cc4bcb46</sys_id>
+        <sys_name>b15452461b7d91101f8ffcc8cc4bcbcf</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_0b222ad71b3951101f8ffcc8cc4bcb46</sys_update_name>
+        <test display_value="Application for Single and Multiple dates">b15452461b7d91101f8ffcc8cc4bcbcf</test>
+        <test_suite display_value="IntegrationHubDemo Tests">56d1e6971b3951101f8ffcc8cc4bcb0b</test_suite>
+    </sys_atf_test_suite_test>
+</record_update>

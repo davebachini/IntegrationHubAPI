@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from display_value="Assert Response Payload">f5c452461b7d91101f8ffcc8cc4bcbb0</copied_from>
+        <description>Assert a response payload contains 'You have successfully applied for your leave/s.'</description>
+        <display_name>Assert Response Payload</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Assert Response Payload">d53e40d59f132200ef4afa7dc67fcfc7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:30:21</sys_created_on>
+        <sys_id>aadf16821bbd91101f8ffcc8cc4bcb9b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Assert Response Payload</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_step_aadf16821bbd91101f8ffcc8cc4bcb9b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 05:31:28</sys_updated_on>
+        <table/>
+        <test display_value="Successful Application with Approval">dadf16821bbd91101f8ffcc8cc4bcb90</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=aadf16821bbd91101f8ffcc8cc4bcb9b"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>aadf16821bbd91101f8ffcc8cc4bcb9b</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:30:21</sys_created_on>
+        <sys_id>aadf16821bbd91101f8ffcc8cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 08:30:21</sys_updated_on>
+        <value>You have successfully applied for your leave/s.</value>
+        <variable display_value="Response body">f0eec4d59f132200ef4afa7dc67fcf6d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>aadf16821bbd91101f8ffcc8cc4bcb9b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 08:30:21</sys_created_on>
+        <sys_id>e6df16821bbd91101f8ffcc8cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 08:30:21</sys_updated_on>
+        <value>contains</value>
+        <variable display_value="Operation">ccae44d59f132200ef4afa7dc67fcf1e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_d53e40d59f132200ef4afa7dc67fcfc7^id=aadf16821bbd91101f8ffcc8cc4bcb9b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_atf_step_aadf16821bbd91101f8ffcc8cc4bcb9b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from display_value="Assert Response Payload">f5c452461b7d91101f8ffcc8cc4bcbb0</copied_from><description>Assert a response payload contains 'You have successfully applied for your leave/s.'</description><display_name>Assert Response Payload</display_name><inputs/><mugshots_cache_json/><notes/><order>1</order><step_config display_value="Assert Response Payload">d53e40d59f132200ef4afa7dc67fcfc7</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:30:21</sys_created_on><sys_id>aadf16821bbd91101f8ffcc8cc4bcb9b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Assert Response Payload</sys_name><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_update_name>sys_atf_step_aadf16821bbd91101f8ffcc8cc4bcb9b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 05:31:28</sys_updated_on><table/><test display_value="Successful Application with Approval">dadf16821bbd91101f8ffcc8cc4bcb90</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=aadf16821bbd91101f8ffcc8cc4bcb9b"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>aadf16821bbd91101f8ffcc8cc4bcb9b</document_key><order>110</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:30:21</sys_created_on><sys_id>aadf16821bbd91101f8ffcc8cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 08:30:21</sys_updated_on><value>You have successfully applied for your leave/s.</value><variable display_value="Response body">f0eec4d59f132200ef4afa7dc67fcf6d</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>aadf16821bbd91101f8ffcc8cc4bcb9b</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 08:30:21</sys_created_on><sys_id>e6df16821bbd91101f8ffcc8cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 08:30:21</sys_updated_on><value>contains</value><variable display_value="Operation">ccae44d59f132200ef4afa7dc67fcf1e</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_d53e40d59f132200ef4afa7dc67fcfc7^id=aadf16821bbd91101f8ffcc8cc4bcb9b"/></record_update>]]></payload>
+        <payload_hash>1588756567</payload_hash>
+        <record_name>Assert Response Payload</record_name>
+        <reverted_from/>
+        <source>7d225a031b2411101f8ffcc8cc4bcb4d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 05:31:28</sys_created_on>
+        <sys_id>d14d5e531b3951101f8ffcc8cc4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833554bb020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 05:31:28</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>d94d5e531239511028006d52da1ce3e3</update_guid>
+        <update_guid_history>d94d5e531239511028006d52da1ce3e3:1588756567,66df168218bd9110e93a36dd4b94bd9e:1007598330</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 05:31:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>1bb80c9137414a40865e45488e7d8c10</sys_id>
+        <sys_metadata>aadf16821bbd91101f8ffcc8cc4bcb9b</sys_metadata>
+        <sys_name>Assert Response Payload</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_atf_step_aadf16821bbd91101f8ffcc8cc4bcb9b</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_aadf16821bbd91101f8ffcc8cc4bcb9b">d14d5e531b3951101f8ffcc8cc4bcbe4</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

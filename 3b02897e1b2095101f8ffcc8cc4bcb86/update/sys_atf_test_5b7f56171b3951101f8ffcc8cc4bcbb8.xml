@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test">
+    <sys_atf_test action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from display_value="Successful Application with Approval">dadf16821bbd91101f8ffcc8cc4bcb90</copied_from>
+        <description>This test covers the Flow Designer part of the leave application.</description>
+        <enable_parameterized_testing>false</enable_parameterized_testing>
+        <fail_on_server_error>true</fail_on_server_error>
+        <name>Successful Application with Rejection</name>
+        <parameters/>
+        <remember/>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 05:41:10</sys_created_on>
+        <sys_id>5b7f56171b3951101f8ffcc8cc4bcbb8</sys_id>
+        <sys_name>Successful Application with Rejection</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_test_5b7f56171b3951101f8ffcc8cc4bcbb8</sys_update_name>
+    </sys_atf_test>
+    <sys_variable_value action="delete_multiple" query="document_key=5b7f56171b3951101f8ffcc8cc4bcbb8"/>
+</record_update>

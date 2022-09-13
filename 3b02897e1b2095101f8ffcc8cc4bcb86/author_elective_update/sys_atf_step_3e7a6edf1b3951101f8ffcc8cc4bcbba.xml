@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from/>
+        <description>Validate there is at least one record in 'x_832172_integra_work_leaves' matching query:
+Leave Date on 2022-12-14
+With a failure timeout of 5 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>7</order>
+        <step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:29:30</sys_created_on>
+        <sys_id>3e7a6edf1b3951101f8ffcc8cc4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_step_3e7a6edf1b3951101f8ffcc8cc4bcbba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:29:30</sys_updated_on>
+        <table>x_832172_integra_work_leaves</table>
+        <test display_value="Application for Single and Multiple dates">b15452461b7d91101f8ffcc8cc4bcbcf</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=3e7a6edf1b3951101f8ffcc8cc4bcbba"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:29:31</sys_created_on>
+        <sys_id>178aee131b7951101f8ffcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:29:31</sys_updated_on>
+        <value>records_match_query</value>
+        <variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:29:31</sys_created_on>
+        <sys_id>2b8aee131b7951101f8ffcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:29:31</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:29:31</sys_created_on>
+        <sys_id>af8aee131b7951101f8ffcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:29:31</sys_updated_on>
+        <value>leave_dateON2022-12-14@javascript:gs.dateGenerate('2022-12-14','start')@javascript:gs.dateGenerate('2022-12-14','end')^EQ</value>
+        <variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:29:31</sys_created_on>
+        <sys_id>eb8aee131b7951101f8ffcc8cc4bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:29:31</sys_updated_on>
+        <value>x_832172_integra_work_leaves</value>
+        <variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7^id=3e7a6edf1b3951101f8ffcc8cc4bcbba"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_atf_step_3e7a6edf1b3951101f8ffcc8cc4bcbba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from/><description>Validate there is at least one record in 'x_832172_integra_work_leaves' matching query:
+Leave Date on 2022-12-14
+With a failure timeout of 5 Seconds</description><display_name>Record Query</display_name><inputs/><mugshots_cache_json/><notes/><order>7</order><step_config display_value="Record Query">2d82e3c7531400109e02ddeeff7b12a7</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:29:30</sys_created_on><sys_id>3e7a6edf1b3951101f8ffcc8cc4bcbba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Record Query</sys_name><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_update_name>sys_atf_step_3e7a6edf1b3951101f8ffcc8cc4bcbba</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:29:30</sys_updated_on><table>x_832172_integra_work_leaves</table><test display_value="Application for Single and Multiple dates">b15452461b7d91101f8ffcc8cc4bcbcf</test><timeout>1970-01-01 00:00:05</timeout><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=3e7a6edf1b3951101f8ffcc8cc4bcbba"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:29:31</sys_created_on><sys_id>178aee131b7951101f8ffcc8cc4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:29:31</sys_updated_on><value>records_match_query</value><variable display_value="Assert type">b86c0427531000109e02ddeeff7b1227</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:29:31</sys_created_on><sys_id>2b8aee131b7951101f8ffcc8cc4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:29:31</sys_updated_on><value>0</value><variable display_value="Enforce security">02fb0027531000109e02ddeeff7b120b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:29:31</sys_created_on><sys_id>af8aee131b7951101f8ffcc8cc4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:29:31</sys_updated_on><value>leave_dateON2022-12-14@javascript:gs.dateGenerate('2022-12-14','start')@javascript:gs.dateGenerate('2022-12-14','end')^EQ</value><variable display_value="Conditions">915990ab531000109e02ddeeff7b12f8</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3e7a6edf1b3951101f8ffcc8cc4bcbba</document_key><order>300</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-13 06:29:31</sys_created_on><sys_id>eb8aee131b7951101f8ffcc8cc4bcb01</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-13 06:29:31</sys_updated_on><value>x_832172_integra_work_leaves</value><variable display_value="Table">78b8d86b531000109e02ddeeff7b12f3</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_2d82e3c7531400109e02ddeeff7b12a7^id=3e7a6edf1b3951101f8ffcc8cc4bcbba"/></record_update>]]></payload>
+        <payload_hash>-1223393816</payload_hash>
+        <record_name>Record Query</record_name>
+        <reverted_from/>
+        <source>7d225a031b2411101f8ffcc8cc4bcb4d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:29:31</sys_created_on>
+        <sys_id>2b8aee131b7951101f8ffcc8cc4bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1833589dd4c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-13 06:29:31</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>638aee1338795110f3244085e1e34804</update_guid>
+        <update_guid_history>638aee1338795110f3244085e1e34804:-1223393816</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-13 06:33:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>0182d32f69aa430980590bfadffc3a11</sys_id>
+        <sys_metadata>3e7a6edf1b3951101f8ffcc8cc4bcbba</sys_metadata>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_atf_step_3e7a6edf1b3951101f8ffcc8cc4bcbba</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_3e7a6edf1b3951101f8ffcc8cc4bcbba">2b8aee131b7951101f8ffcc8cc4bcb04</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

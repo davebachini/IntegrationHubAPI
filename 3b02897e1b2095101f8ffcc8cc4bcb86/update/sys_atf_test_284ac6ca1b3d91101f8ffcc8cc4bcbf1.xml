@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test">
+    <sys_atf_test action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description/>
+        <enable_parameterized_testing>false</enable_parameterized_testing>
+        <fail_on_server_error>true</fail_on_server_error>
+        <name>Invalid Command - arguments</name>
+        <parameters/>
+        <remember/>
+        <sys_class_name>sys_atf_test</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 06:57:09</sys_created_on>
+        <sys_id>284ac6ca1b3d91101f8ffcc8cc4bcbf1</sys_id>
+        <sys_name>Invalid Command - arguments</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_test_284ac6ca1b3d91101f8ffcc8cc4bcbf1</sys_update_name>
+    </sys_atf_test>
+    <sys_variable_value action="delete_multiple" query="document_key=284ac6ca1b3d91101f8ffcc8cc4bcbf1"/>
+</record_update>

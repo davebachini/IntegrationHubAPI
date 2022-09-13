@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <copied_from display_value="Send REST Request - Inbound">8715de461b7d91101f8ffcc8cc4bcbd0</copied_from>
+        <description>Send a 'POST' request to '/api/x_832172_integra/leaves/processRequest'</description>
+        <display_name>Send REST Request - Inbound</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>3</order>
+        <step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>3b9516c61b7d91101f8ffcc8cc4bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_update_name>sys_atf_step_3b9516c61b7d91101f8ffcc8cc4bcbf7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <table/>
+        <test display_value="Successful Application copy">ab959a861b7d91101f8ffcc8cc4bcbbf</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=3b9516c61b7d91101f8ffcc8cc4bcbf7"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>339516c61b7d91101f8ffcc8cc4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <value>post</value>
+        <variable display_value="Method">59877da10b3222000b7da95e93673a56</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>7b9516c61b7d91101f8ffcc8cc4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <value>{"user_id":"U03NJE46U2Z","command":"/apply","text":"multiple,2022-12-15.2022-12-16,vl","channel_id":"C03NMC0BWCA","token":"gKh8bZit6Y8ibJpHi3xm3Dbz"}</value>
+        <variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>7f9516c61b7d91101f8ffcc8cc4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <value/>
+        <variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>b79516c61b7d91101f8ffcc8cc4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <value>/api/x_832172_integra/leaves/processRequest</value>
+        <variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>bb9516c61b7d91101f8ffcc8cc4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <value/>
+        <variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>f39516c61b7d91101f8ffcc8cc4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <value/>
+        <variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f^id=3b9516c61b7d91101f8ffcc8cc4bcbf7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</application>
+        <file_path/>
+        <instance_id>3ed2a421dbf0f3c04d2bac44d4961916</instance_id>
+        <instance_name>dev80684</instance_name>
+        <name>sys_atf_step_3b9516c61b7d91101f8ffcc8cc4bcbf7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><copied_from display_value="Send REST Request - Inbound">8715de461b7d91101f8ffcc8cc4bcbd0</copied_from><description>Send a 'POST' request to '/api/x_832172_integra/leaves/processRequest'</description><display_name>Send REST Request - Inbound</display_name><inputs/><mugshots_cache_json/><notes/><order>3</order><step_config display_value="Send REST Request - Inbound">e00571a10b3222000b7da95e93673a8f</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>3b9516c61b7d91101f8ffcc8cc4bcbf7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Send REST Request - Inbound</sys_name><sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package><sys_policy/><sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope><sys_update_name>sys_atf_step_3b9516c61b7d91101f8ffcc8cc4bcbf7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><table/><test display_value="Successful Application copy">ab959a861b7d91101f8ffcc8cc4bcbbf</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=3b9516c61b7d91101f8ffcc8cc4bcbf7"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key><order>1</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>339516c61b7d91101f8ffcc8cc4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><value>post</value><variable display_value="Method">59877da10b3222000b7da95e93673a56</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key><order>3</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>7b9516c61b7d91101f8ffcc8cc4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><value>{"user_id":"U03NJE46U2Z","command":"/apply","text":"multiple,2022-12-15.2022-12-16,vl","channel_id":"C03NMC0BWCA","token":"gKh8bZit6Y8ibJpHi3xm3Dbz"}</value><variable display_value="Query Parameters">58408e250b3222000b7da95e93673a5c</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key><order>4</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>7f9516c61b7d91101f8ffcc8cc4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><value/><variable display_value="Headers">cec002650b3222000b7da95e93673aae</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key><order>2</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>b79516c61b7d91101f8ffcc8cc4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><value>/api/x_832172_integra/leaves/processRequest</value><variable display_value="Path">50bff9250b3222000b7da95e93673a9b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key><order>0</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>bb9516c61b7d91101f8ffcc8cc4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><value/><variable display_value="Basic authentication">020a6af09fd32200ef4afa7dc67fcfec</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>3b9516c61b7d91101f8ffcc8cc4bcbf7</document_key><order>5</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-09-09 07:45:40</sys_created_on><sys_id>f39516c61b7d91101f8ffcc8cc4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-09-09 07:45:40</sys_updated_on><value/><variable display_value="Body">81e042650b3222000b7da95e93673aa2</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_e00571a10b3222000b7da95e93673a8f^id=3b9516c61b7d91101f8ffcc8cc4bcbf7"/></record_update>]]></payload>
+        <payload_hash>-204780678</payload_hash>
+        <record_name>Send REST Request - Inbound</record_name>
+        <reverted_from/>
+        <source>7d225a031b2411101f8ffcc8cc4bcb4d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:45:40</sys_created_on>
+        <sys_id>fb9516c61b7d91101f8ffcc8cc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183213625530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-09 07:45:40</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>379516c67d7d9110a60145178b09d6fb</update_guid>
+        <update_guid_history>379516c67d7d9110a60145178b09d6fb:-204780678</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-09 07:46:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>07e659d3908b40c3999347b07c09deb1</sys_id>
+        <sys_metadata>3b9516c61b7d91101f8ffcc8cc4bcbf7</sys_metadata>
+        <sys_name>Send REST Request - Inbound</sys_name>
+        <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
+        <sys_scope_delete display_value="">1dc26ef3364043b3bea1c1731083cf69</sys_scope_delete>
+        <sys_update_name>sys_atf_step_3b9516c61b7d91101f8ffcc8cc4bcbf7</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_3b9516c61b7d91101f8ffcc8cc4bcbf7">fb9516c61b7d91101f8ffcc8cc4bcbfb</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

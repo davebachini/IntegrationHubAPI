@@ -63,6 +63,7 @@
     response.setHeaders(hdrs);
 	
 	writer.writeString("{\"response_type\":\"ephemeral\",\"text\":\""+responseText+"\"}");
+	gs.info("Response: " + text);
 })(request, response);
 
 function checkCorrectChannel (channelId) {
@@ -88,14 +89,11 @@ function checkCorrectChannel (channelId) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-14 06:56:56</sys_created_on>
         <sys_id>f8c6643b1b6891101f8ffcc8cc4bcba5</sys_id>
-        <sys_mod_count>78</sys_mod_count>
         <sys_name>slackMiddleware</sys_name>
         <sys_package display_value="IntegrationHubDemo" source="x_832172_integra">3b02897e1b2095101f8ffcc8cc4bcb86</sys_package>
         <sys_policy/>
         <sys_scope display_value="IntegrationHubDemo">3b02897e1b2095101f8ffcc8cc4bcb86</sys_scope>
         <sys_update_name>sys_ws_operation_f8c6643b1b6891101f8ffcc8cc4bcba5</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-15 10:39:40</sys_updated_on>
         <web_service_definition display_value="Leaves">51440dba1b6095101f8ffcc8cc4bcb5e</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
